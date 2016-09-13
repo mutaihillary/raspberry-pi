@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  {% block head %}<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         {% block title %}<title>Resberry Bite</title>{% end block %}
+          <link rel="stylesheet" type="text/css"href="https://fonts.googleapis.com/css?family=Tangerine">
+          <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
+          <link rel="stylesheet" href="css/animate.css">
+          <link rel="stylesheet" href="css/foundation.min.css">
+          <link rel="stylesheet" href="css/app.css">
+      </head>{% end block %}
+
+   {% block body %}<body>
+
+    <!-- Start Top Bar -->
+    <header>
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">Resberry Bite</li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#bout">Registration</a></li>
+          <li><a href="#portfolio">Login</a></li>
+          <li><a href="#contact">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+    </header>
+    {% end block %}
+    <!-- End Top Bar -->
+
+     <!-- Home -->
+     {% block content %}
+<div id="home" style="font-family:'Raleway', Sans-serif;">
+  <div class="row">
+    <div class="medium-12 columns">
+       <h1 class="headone">Resberry Bite </h1>
+       <p>The Raspberry Pi is a credit card-sized computer that plugs into your TV and a keyboard. It is a capable little computer which can be used in electronics projects, and for many of the things that your desktop PC does, like spreadsheets, word processing, browsing the internet, and playing games. It also plays high-definition video. We want to see it being used by kids all over the world to learn programming. </p>
+      </div>
+    </div>
+</div>
+   {% end block %}
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+  {% end block %}
+</html>

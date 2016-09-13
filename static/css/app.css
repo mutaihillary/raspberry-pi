@@ -1,0 +1,114 @@
+
+  @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  }
+  /*..................................................................................
+HEADER
+..................................................................................*/
+  header a {
+    border: 1px solid #B7B4E5;
+    border-radius: 290486px;
+    color: #FFA813;
+    font-size: 1.4em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: lowercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+  }
+
+  header a:hover {
+    background:  #F3FFFD;
+    color: #221DFF;
+  }
+    h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+  }
+  h1,
+  strong {
+    color: #333;
+  }
+
+  code,
+  pre {
+    background: #eee;
+  }
+
+  code {
+    padding: 2px 4px;
+    vertical-align: text-bottom;
+  }
+
+  pre {
+    padding: 1em;
+  }
+  a {
+    color: #e81c4f;
+  }
+  body {
+    color: #566b78;
+  }
+
+  code,
+  pre {
+    background: #f5f7f9;
+    border-bottom: 1px solid #d8dee9;
+    color: #a7adba;
+  }
+
+  pre {
+    border-left: 2px solid #69c;
+  }
+
+  body {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  }
+
+  body{
+  margin: 0 auto;
+  max-width: 100em;
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  background-color: palette;
+  color: #555;
+  }
+  /*..................................................................................
+HOME
+..................................................................................*/
+#home{
+  background-image:url("../images/watch.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  height: 100%;
+  width: 100%;
+}
+.headone{
+  padding: 10%;
+  font-size: 5em;
+  font-weight: bolder;
+
+}
+.intro{
+  padding-top:3%;
+  font-size: 2em;
+  color: #8120F2;
+  align-content: center;
+}
+#name{
+  padding: 4%;
+  align-content: center;
+}
+#more{
+  align-content: center;
+  font-size: 20px;
+  padding-left: 50%;
+}
+#fa fa-angle-double-down{
+  padding-left: 50%;
+}
+
