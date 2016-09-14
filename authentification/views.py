@@ -1,9 +1,14 @@
 from flask import render_template, request, redirect, flash,url_for
 from run import app
 
-from . import auth
+#from . import auth
 
 
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    return render_template('login.html',login=login)
+
+"""""
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
     form = Loginform()
@@ -13,5 +18,5 @@ def login():
 
 
 def registration():
-    return render_template('auth/registration.html')
+    return render_template('auth/registration.html')"""""
 
