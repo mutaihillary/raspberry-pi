@@ -6,7 +6,7 @@ from . import auth
 
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
-    form = LoginForm()
+    form = Loginform()
     if form.validate_on_submit():
         form.name.data = ''
     return render_template('auth/login.html', form=form, login=login)
