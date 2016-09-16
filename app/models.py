@@ -1,8 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Column, Integer, ForeignKey, Boolean, Unicode, Date
 from sqlalchemy.orm import relationship
-from run import app
-
+from manage import app
 db = SQLAlchemy(app)
 
 

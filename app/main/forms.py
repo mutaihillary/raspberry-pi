@@ -6,14 +6,14 @@ from wtforms import ValidationError
 
 
 class LoginForm(Form):
-    email = StringField('Email', validators=[DataRequired(), length(1, 64),Email()])
+    email = StringField('Email', validators=[DataRequired(), length(1, 64), Email()])
     password = PasswordField('Password', validators=[DataRequired()])
     remember_me = BooleanField('Keep me logged in')
     submit = SubmitField('Log In')
 
 
 class RegistrationForm(Form):
-    email = StringField('Email', validators=[DataRequired(), length(1, 64),Email()])
+    email = StringField('Email', validators=[DataRequired(), length(1, 64), Email()])
     password = PasswordField('Password', validators=[
     DataRequired(), equal_to('password2', message='Passwords must match.')])
     password2 = PasswordField('Confirm password', validators=[DataRequired()])
@@ -21,12 +21,12 @@ class RegistrationForm(Form):
 
 
 def validate_email(self, field):
-    if User.query.filter_by(email=field.data).first():
+    if RegistrationForm.query.filter_by(email=field.data).first():
         raise ValidationError('Email already registered.')
 
 
 def validate_username(self, field):
-    if User.query.filter_by(username=field.data).first():
+    if RegistrationForm.query.filter_by(username=field.data).first():
         raise ValidationError('Username already in use.')
 
 
